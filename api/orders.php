@@ -2,7 +2,7 @@
     include 'connect.php';
 
     $sql = "SELECT * FROM gouwuche";
-
+    
 
     $res = $conn -> query($sql);
     $content = $res->fetch_all(MYSQLI_ASSOC);

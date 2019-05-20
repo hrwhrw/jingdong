@@ -197,17 +197,21 @@ $(function(){
                 url: '../api/gouwuche.php',
                 type: 'post',
                 data: {
+                    type:'i',
                     name:arr.infos[0].name
                     ,img:arr.infos[0].img
                     ,price:arr.infos[0].price
                     ,count_price:arr.infos[0].price*num
                     ,nums:num
+                    ,id: strs
                 },
                 success:function(str){
-                   
+                //    var arr = JSON.parse(str);
+                //    console.log(arr)
                 }
             })
         }
         init1();
     })
+    
 })

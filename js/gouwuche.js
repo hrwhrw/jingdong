@@ -67,15 +67,31 @@ $(function() {
 	$('#cart').on('click', '.good_del', function() {
 		//		console.log(888);
 		var res = confirm('您确定要删除吗？');
+		var iidd=$(this).parent().attr("data-id");
 		if(res) {
 			$(this).parent().remove();
 		}
 		update();
+		cd(iidd);
 	});
-
+function cd(ids){
+	$.ajax({
+		url: '../api/getid.php',
+		type: 'post',
+		data: {
+				type:'d',
+				id:ids
+		},
+		success:function(str){
+			// var	 arr = JSON.parse(str);
+			// 	create(arr.infos);
+			// 	console.log(arr.infos)
+		}
+})
+}
 	//是否应该保留最后一行：如果没有商品了，就隐藏这行(算总价和总数量的)
 	function update() {
-		var len = $('#cart .addnum').size();
+		var len = $('#cart .addnum').size;
 		if(len == 0) {
 			//没有商品了
 			$('#del').hide();
@@ -169,61 +185,15 @@ window.onload = function(){
 	var carList = document.querySelector("#carList");
 	var subPrice = document.querySelector(".subPrice");
 	var btnClear = document.querySelector("#btnClear");
-	// 1.获取cookie的值（字符串）转成数组对象
-	//  * 获取到的cookie也有可能为空
+
 	var goodslistArr = window.localStorage.goodslist || [];
-	// (1)"" || []  ===> false || [] ===> []
-	// (2)"json字符串" || []  ==> "json字符串"
+
 	if(typeof goodslistArr == "string"){
 			goodslistArr = JSON.parse(goodslistArr);
 	}
-	// render();
+
  
-	//4.点击x按钮，其实删除的是数组中的这个对象，
-	// *找对象：通过当前点击的li的currentGuid与数组对象的guid进行比较，一致的话，让数组把这个索引对应的值删掉
-	// *将数组重新存入cookie，再重新渲染 
-	// carList.onclick = function(e){
-	// 		if(e.target.className == "btn-close"){
-	// 				var currentGuid = e.target.parentElement.dataset.guid;
-	// 				var i;
-	// 				goodslistArr.some(function(item,idx){
-	// 						i = idx;
-	// 						return item.guid == currentGuid;
-	// 				})
-	// 				goodslistArr.splice(i,1);
-	// 				render();
-	// 				window.localStorage.goodslist = JSON.stringify(goodslistArr);
-	// 		}
-	// }
 
-
-	// //5. 清空购物车
-	// btnClear.onclick = function(){
-	// 		goodslistArr = [];
-	// 		carList.innerHTML = "";
-	// 		subPrice.innerText = 0;
-	// 		window.localStorage.removeItem("goodslist");
-
-
-	// }
-
-// 	function render(){
-// 			//2. 将数组goodslistArr渲染到页面上
-// 			//3. 计算总价，渲染到subPrice
-// 			var total = 0;
-// 			carList.innerHTML = goodslistArr.map(function(item){
-// 					var {guid,imgurl,gname,price,qty} = item;
-// 					total += price * qty;
-// 					return `<li data-guid="${guid}">
-// 								 <img src="${imgurl}" >
-// 								 <p>${gname}</p>
-// 								 <p class="price"><input type="button" value="-" class="jian"/><span class="qian">${price}</span>x<span>${qty}</span><input type="button" value="+" class="addNum"/></p>
-// 								 <input type="button" value="X" class="btn-close">
-// 						 </li>`;
-// 			}).join("");
-// 			subPrice.innerText = total.toFixed(2);
-// 	}						
-// }
 
 $(function(){
 		function init(){
@@ -247,7 +217,7 @@ $(function(){
 	init();
 	function create(item){
 			var haha= $.map(item,function(item, idex){
-					return `<li class="goods">
+					return `<li class="goods" data-id="${item.goid}">
 					<p class="good_check"><input type="checkbox" name="good" value="" /></p>
 					<p class="good_name">
 							<img src="${item.img}" alt="" class="tupian">
