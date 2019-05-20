@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layui-v2.4.5/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/xiangqing.css">
+    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../lib/layui-v2.4.5/layui/layui.js"></script>
+    <script src="../js/xiangqing.js"></script>
+</head>
+<body>
+    <div id="box">
+        <div id="shortcut">
+                <div class="w">
+                        <ul class="fl">
+                            <li id="ttbar-home">
+                                <i class="layui-icon layui-icon-home">
+                                    
+                                </i>
+                                <a href="//www.jd.com/" target="_blank">
+                                    京东首页
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="fr">
+                            <li class="fore1" id="ttbar-login">
+                                <a href="html/denglu.html" class="link-login style-red">
+                                    请登录
+                                </a>&nbsp;&nbsp;
+                                <a href="html/zhuce.html" class="link-regist">
+                                    免费注册
+                                </a>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore2">
+                                <div class="dt">
+                                    <a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore3 dorpdown" id="ttbar-myjd">
+                                <div class="dt cw-icon">
+                                    <a target="_blank" href="//home.jd.com/">
+                                        我的京东
+                                    </a>
+                                    <i class="iconfont layui-icon layui-icon-down" style="font-size: 12px;">
+                                </i>
+                                </div>
+                                <div class="dd dorpdown-layer">
+                                    <div class="dd-spacer"></div>
+                                    <div class="myjdlist1">
+                                        <div class="fore1">
+                                            <div class="item">
+                                                <a href="">
+                                                    待处理订单
+                                                    <span id="num-unfinishedorder"></span>
+                                                </a>                                       
+                                            </div>
+                                            <div class="item">
+                                                <a href="">
+                                                    待处理订单
+                                                    <span id="num-unfinishedorder"></span>
+                                                </a>                                       
+                                            </div>
+                                            <div class="item">
+                                                <a href="">
+                                                    待处理订单
+                                                    <span id="num-unfinishedorder"></span>
+                                                </a>                                       
+                                            </div>
+                                        </div>
+                                        <div class="fore2">
+                                            <div class="item">
+                                                <a href="">
+                                                    消息
+                                                    <span id="num-tip"></span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="">
+                                                    消息
+                                                    <span id="num-tip"></span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="">
+                                                    消息
+                                                    <span id="num-tip"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="myjdlist2">
+                                        <div class="fore1">
+                                            <div class="item">
+                                                <a href="">我的京豆</a>
+                                            </div>
+                                            <div class="item baitiao">
+                                                <a href="//baitiao.jd.com" target="_blank">京东白条</a>
+                                            </div>
+                                        </div>
+                                        <div class="fore2">
+                                                <div class="item">
+                                                    <a href="">我的优惠卷</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="//baitiao.jd.com" target="_blank">我的理财</a>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore4">
+                                <div class="dt">
+                                    <a target="_blank" href="//vip.jd.com/">京东会员</a>
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore5">
+                                <div class="dt">
+                                    <a target="_blank" href="//b.jd.com/">企业采购</a>
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore6 dorpdown" id="ttbar-serv">
+                                <div class="dt cw-icon">
+                                    客户服务<i class="iconfont"></i>
+                                </div>
+                                <div class="dd dorpdown-layer">
+                                    <div class="dd-spacer"></div>
+                                    <div class="dd-inner">
+                                        <span class="loading"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore7 dorpdown" id="ttbar-navs">
+                                <div class="dt cw-icon">
+                                    网站导航<i class="iconfont"></i>
+                                </div>
+                                <div class="dd dorpdown-layer">
+                                    <div class="dd-spacer"></div>
+                                    <div class="dd-inner">
+                                        <span class="loading"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="spacer"></li>
+                            <li class="fore8 dorpdown" id="ttbar-apps">
+                                <div class="dt cw-icon">
+                                    <a target="_blank" href="//app.jd.com/">手机京东</a>
+                                </div>
+                                <div class="dd dorpdown-layer">				
+                                    <div class="dd-spacer"></div>				
+                                    <div class="dd-inner" id="ttbar-apps-main">
+                                        <div class="dd-spacer"></div>
+                                        <div class="dd-inner">
+                                            <span class="loading"></span>
+                                        </div>				
+                                    </div>			
+                                </div>		
+                            </li>
+                        </ul>
+                </div>
+        </div>
+        <!-- 收搜 -->
+        <div id="shouSuo">
+            <div id="logo-2014">
+                <a href="../index.html" class="logo" title="京东超市"></a>
+                
+            </div>
+    
+            <div id="search-2014">
+                <ul id="shelper" class="hide">
+                </ul>
+                <div class="form">
+                    <input type="text" id="key" class="text blurcolor" placeholder='满199-100'>
+                    <a href=""><div class="photo-search-btn layui-icon layui-icon-camera" ></div></a> 
+                    <button class="button cw-icon">
+                        <!-- <i></i> -->
+                        搜索
+                    </button>
+                </div>
+            </div>
+    
+            <div id="settleup-2014">
+                <div class="cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"></i>
+                    <i class="ci-count" id="shopping-amount"></i>
+                    <a target="_blank" href=""> 
+                        我的购物车
+                    </a>
+                </div>
+                <div class="dl">
+                    <div class="spacer"></div>
+                    <div class="prompt">
+                        <div class="nogoods">
+                            <b></b>购物车中还没有商品，赶紧选购吧！
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="hotwords">
+                <a href="">食品</a>
+                <a href="">母婴</a>
+                <a href="">清洁</a>
+                <a href="">好物9.9</a>
+                <a href="">婚庆美酒</a>
+            </div>
+        </div>
+        <div id="123"></div>
+        <!-- main -->
+        <!-- <div class="ww">
+             左放大镜 -->
+            <!-- <div class="preview-wrap">
+                <div class="magnify-box">
+                    <div class="min-img">
+                        <img src="../img/lb1.jpg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <div class="max-img">
+                        <img src="../img/lb1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="img-list">
+                    <a href="" id="spec-forward" class="arrow-prev disabled">
+                        <i class="sprite-arrow-prev  layui-icon layui-icon-left" style="font-size: 30px;"></i>
+                    </a>
+                    <ul>                           
+                        <li><img src="../img/lb1.jpg" alt=""></li>
+                        <li><img src="../img/lb2.jpg" alt=""></li>
+                        <li><img src="../img/lb3.jpg" alt=""></li>
+                        <li><img src="../img/lb4.jpg" alt=""></li>
+                        <li><img src="../img/lb5.jpg" alt=""></li>                           
+                    </ul>  
+                    <a href="" id="spec-forward" class="arrow-next disabled">
+                        <i class="sprite-arrow-prev layui-icon layui-icon-right"  style="font-size: 30px;"></i>
+                    </a>
+                </div>   
+                <img src="../img/jiatu4.png" alt="" class="jiatu">
+            </div>
+            <script src="../js/fengzhuang.js"></script>
+            <script>
+                fangDaJing('.magnify-box');
+            </script> --> 
+
+            <!-- 中 -->
+            <!-- <div class="itemInfo-wrap">
+                <div class="sku-name">
+                    <img src="https://img10.360buyimg.com/img/jfs/t8485/356/1281159143/15432/343a6ec9/59b73dbaN9c878bcc.png" alt="">
+                    
+                    三只松鼠每日坚果零食干果坚果礼盒大礼包孕妇零食小吃榛子巴旦木仁开心果混合果仁30袋装750g/盒                
+                </div> -->
+                <!-- 价格位置 -->
+                <!-- <div class="summary summary-first">
+                    <div class="yi">
+                        <div class="dt">京 东 价</div>
+                        <span class="p-price">
+                            <span>￥</span>
+                            <span class="price J-p-100000499657">149.00</span>
+                        </span>
+                    </div>
+                    <div class="er">
+                        <img src="../img/jiatu5.png" alt="">
+                    </div>
+                </div>
+                <div class="summary p-choose-wrap">
+                    <img src="../img/jiatu8.png" alt="">
+                    <div id="choose-btns" class="choose-btns clearfix">
+                        <input type="text" class="put">
+                        <a href="javascript:void(0);" class="a1">+</a>
+                        <a href="javascript:void(0);" class="a2">-</a>
+                        <a href="" class="jiaru">加入购物车</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- 右 -->
+            <!-- <div class="track">
+                <img src="../img/jiatu3.png" alt="">
+            </div> -->
+        </div>
+        <!-- 尾部 -->
+        <div id="cmsfooter">
+            <div class="service-2017">
+                <ul class="www">
+                    <li>
+                        <img src="../img/duo.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="../img/kuai.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="../img/hao.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="../img/seng.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                </ul>
+                <div class="jd-help">
+                    <div class="ww">
+                        <div class="jd-help-ww-wrap">
+                            <dl class="byy1">
+                                <dt>购物指南</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy2">
+                                <dt>配送方式</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy3">
+                                <dt>支付方式</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy4">
+                                <dt>售后服务</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy5">
+                                <dt>特色服务</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-2017">
+                <div class="copyright_links">
+                    <p>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                    </p>
+                </div>
+                <div class="copyright_info">
+                    <p>
+                        <a href="">京公网安备 11000002000088号</a>
+                        <span class="copyright_split">|</span>
+                        <span>京ICP证070359号</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <span class="copyright_split">|</span>
+                        <span>新出发京零&nbsp;字第大120007号</span>
+                    </p>
+                    <p>
+                        <a href="">互联网出版许可编号新出网证(京)字150号</a>
+                        <span class="copyright_split">|</span>
+                        <span>出版物经营许可证</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
+                        <span class="copyright_split">|</span>
+                        <span>违法和不良信息举报电话：4006561155</span>
+                    </p>
+                    <p>
+                            <span class="copyright_text">Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;<em id="copyright_year">2019</em>&nbsp;&nbsp;京东JD.com&nbsp;版权所有</span>
+                        <span class="copyright_split">|</span>
+                        <span>消费者维权热线:4006067733  经营证照</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <span class="copyright_split">|</span>
+                        <span>营业执照</span>
+                    </p>
+                    <p class="mod_copyright_inter">
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_global"></i>
+                            Global Site
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_rissia"></i>
+                            Сайт России
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_indonesia"></i>
+                            Situs Indonesia
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_spain"></i>
+                            Sitio de España
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_thailand"></i>
+                            เว็บไซต์ประเทศไทย
+                        </a>
+                    </p>
+                </div>
+                <div class="copyright_auth">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

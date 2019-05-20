@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="lib/layui-v2.4.5/layui/css/layui.css">
+    <script src="lib/layui-v2.4.5/layui/layui.js"></script>
+    <script src="js/common2.js"></script>
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="lib/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <script src="js/common1.js"></script>
+
+</head>
+<body>
+   <div id="box">
+       <div id="shortcut">
+           <div class="w">
+                <ul class="fl">
+                    <li id="ttbar-home">
+                        <i class="layui-icon layui-icon-home">
+                               
+                        </i>
+                        <a href="//www.jd.com/" target="_blank">
+                            京东首页
+                        </a>
+                    </li>
+                </ul>
+                <ul class="fr">
+                    <li class="fore1" id="ttbar-login">
+                        <a href="###" class="link-login style-red">
+                            请登录
+                        </a>&nbsp;&nbsp;
+                        <a href="html/zhuce.html" class="link-regist">
+                            免费注册
+                        </a>
+                        <a href="###" class="tuiChu" style="display:none;">
+                            退出
+                        </a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore2">
+                        <div class="dt">
+                            <a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore3 dorpdown" id="ttbar-myjd">
+                        <div class="dt cw-icon">
+                            <a target="_blank" href="//home.jd.com/">
+                                我的京东
+                            </a>
+                            <i class="iconfont"></i>
+                        </div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dd-spacer"></div>
+                            <div class="myjdlist1">
+                                <div class="fore1">
+                                    <div class="item">
+                                        <a href="">
+                                            待处理订单
+                                            <span id="num-unfinishedorder"></span>
+                                        </a>                                       
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            待处理订单
+                                            <span id="num-unfinishedorder"></span>
+                                        </a>                                       
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            待处理订单
+                                            <span id="num-unfinishedorder"></span>
+                                        </a>                                       
+                                    </div>
+                                </div>
+                                <div class="fore2">
+                                    <div class="item">
+                                        <a href="">
+                                            消息
+                                            <span id="num-tip"></span>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            消息
+                                            <span id="num-tip"></span>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            消息
+                                            <span id="num-tip"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="myjdlist2">
+                                <div class="fore1">
+                                    <div class="item">
+                                        <a href="">我的京豆</a>
+                                    </div>
+                                    <div class="item baitiao">
+                                        <a href="//baitiao.jd.com" target="_blank">京东白条</a>
+                                    </div>
+                                </div>
+                                <div class="fore2">
+                                        <div class="item">
+                                            <a href="">我的优惠卷</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="//baitiao.jd.com" target="_blank">我的理财</a>
+                                        </div>
+                                    </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore4">
+                        <div class="dt">
+                            <a target="_blank" href="//vip.jd.com/">京东会员</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore5">
+                        <div class="dt">
+                            <a target="_blank" href="//b.jd.com/">企业采购</a>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore6 dorpdown" id="ttbar-serv">
+                        <div class="dt cw-icon">
+                            客户服务<i class="iconfont"></i>
+                        </div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dd-spacer"></div>
+                            <div class="dd-inner">
+                                <span class="loading"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore7 dorpdown" id="ttbar-navs">
+                        <div class="dt cw-icon">
+                            网站导航<i class="iconfont"></i>
+                        </div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dd-spacer"></div>
+                            <div class="dd-inner">
+                                <span class="loading"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore8 dorpdown" id="ttbar-apps">
+                        <div class="dt cw-icon">
+                            <a target="_blank" href="//app.jd.com/">手机京东</a>
+                        </div>
+                        <div class="dd dorpdown-layer">				
+                            <div class="dd-spacer"></div>				
+                            <div class="dd-inner" id="ttbar-apps-main">
+                                <div class="dd-spacer"></div>
+                                <div class="dd-inner">
+                                    <span class="loading"></span>
+                                </div>				
+                            </div>			
+                        </div>		
+                    </li>
+                </ul>
+           </div>
+       </div>
+       <!-- ------------------------------------------- -->
+       <!-- 收搜 -->
+       <div id="shouSuo">
+            <div id="logo-2014">
+                <a href="index.html" class="logo" title="京东超市"></a>
+                <div class="dropdown logo_dropdown clearfix">
+                    <div class="fl dropdown_locate">
+                    </div>
+                    <ul class="fl dropdown_wrap">
+                        <li id="ttbar-mycity" class="dropdown_box">
+                            <div class="dt cw-icon ui-areamini-text-wrap" style="">				
+                                <i class="iconfont"></i>				
+                                <span class="ui-areamini-text" data-id="19" title="广东">
+                                    广东
+                                </span> 			
+                            </div>
+                            <div class="ddt dorpdown-layer">
+                                <div class="list clearfix">
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">北京</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">北京</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">上海</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">天津</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">重庆</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">河北</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">山西</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">河南</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">辽宁</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">吉林</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">黑龙江</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">内蒙古</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">江苏</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">山东</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">安徽</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">浙江</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">福建</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">湖北</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">湖南</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">湖北</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">广东</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">广西</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">江西</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">四川</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">海南</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">贵州</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">云南</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">西藏</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">陕西</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">甘肃</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">青海</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">宁夏</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">新疆</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">港澳</a>
+                                    </div>
+                                    <div class="item">
+                                        <a data-id="1" href="javascript:void(0)">钓鱼岛</a>
+                                    </div>
+                                </div>
+                                <div class="areamini_inter">
+                                    <div class="areamini_inter_split"></div>
+                                    <p class="areamini_inter_desc">Available Sites</p>
+                                    <ul class="areamini_inter_list">
+                                        <li class="areamini_inter_item"> 					  
+                                            <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101"> 						
+                                                <div class="areamini_inter_ico areamini_inter_ico_global">                                                   
+                                                </div> 						
+                                                <div class="areamini_inter_name">
+                                                    Global Site
+                                                </div> 					  
+                                            </a> 					
+                                        </li>
+                                        <li class="areamini_inter_item"> 					  
+                                            <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101"> 						
+                                                <div class="areamini_inter_ico areamini_inter_ico_global">                                                   
+                                                </div> 						
+                                                <div class="areamini_inter_name">
+                                                    Сайт России
+                                                </div> 					  
+                                            </a> 					
+                                        </li>
+                                        <li class="areamini_inter_item"> 					  
+                                            <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101"> 						
+                                                <div class="areamini_inter_ico areamini_inter_ico_global">                                                   
+                                                </div> 						
+                                                <div class="areamini_inter_name">
+                                                    Situs Indonesia
+                                                </div> 					  
+                                            </a> 					
+                                        </li>
+                                        <li class="areamini_inter_item"> 					  
+                                            <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101"> 						
+                                                <div class="areamini_inter_ico areamini_inter_ico_global">                                                   
+                                                </div> 						
+                                                <div class="areamini_inter_name">
+                                                    Sitio de España
+                                                </div> 					  
+                                            </a> 					
+                                        </li>
+                                        <li class="areamini_inter_item"> 					  
+                                            <a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank" clstag="h|keycount|head|topbar_0101"> 						
+                                                <div class="areamini_inter_ico areamini_inter_ico_global">                                                   
+                                                </div> 						
+                                                <div class="areamini_inter_name">
+                                                     เว็บไซต์ประเทศไทย
+                                                </div> 					  
+                                            </a> 					
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="search-2014">
+                <ul id="shelper" class="hide">
+                </ul>
+                <div class="form">
+                    <input type="text" id="key" class="text blurcolor" placeholder='满199-100'>
+                    <button class="button cw-icon">
+                        <!-- <i></i> -->
+                        搜索
+                    </button>
+                </div>
+            </div>
+
+            <div id="settleup-2014">
+                <div class="cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"></i>
+                    <i class="ci-count" id="shopping-amount"></i>
+                    <a target="_blank" href=""> 
+                        我的购物车
+                    </a>
+                    <div class="dl">
+                        <div class="spacer"></div>
+                        <div class="prompt">
+                            <div class="nogoods">
+                                <b></b>购物车中还没有商品，赶紧选购吧！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="headerqrcode">
+                <a href="javascript:;" class="headerqrcode_lk">
+                    <i class="headerqrcode_ico"></i>
+                    <span class="headerqrcode_txt">
+                        扫码享受优惠
+                    </span>
+                </a>
+                <div class="headerqrcode_qc">
+                    <div class="headerqrcode_qcimg">
+                        <img data-src="" src="img/ewm.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="hotwords">
+                <a href="">食品</a>
+                <a href="">母婴</a>
+                <a href="">清洁</a>
+                <a href="">好物9.9</a>
+                <a href="">婚庆美酒</a>
+            </div>
+       </div>
+        <!-- ------------------------------------------- -->
+
+       <!-- 主要内容 -->
+       <div id="mod_container">
+           <div class="chaoshi_fs" id="chaoshi_fs_1">
+               <div class="chaoshi_menu">
+                    <div class="grid_c1 clearfix">
+                        <!-- 超市首页 -->
+                        <ul class="chaoshi_menu_list clearfix fl">
+                            <li class="chaoshi_menu_list_item fl">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd" style="color: #ffa133;">超市首页</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href=""  class="dyd">超值量版</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd">京东生鲜</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd">品牌特卖</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd">品质进口</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl" style="width:118px">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd">山姆会员店</a>
+                            </li>
+                            <li class="chaoshi_menu_list_item fl" style="width:110px">
+                                <i class="chaoshi_menu_list_split"></i>
+                                <a href="" class="dyd">PLUS专场</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- 满99 -->
+                        <ul class="chaoshi_menu_ad clearfix fr">
+                            <li class="li2 li2fl">
+                                <i class="mod_png chaoshi_menu_ad_icon"></i>
+                                <span class="chaoshi_menu_ad_txt">满99免运费</span>
+                            </li>
+                            <li class="li2 li2fr">
+                                <i class="mod_png chaoshi_menu_ad_icon"></i>
+                                <span class="chaoshi_menu_ad_txt">满99免运费</span>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+               <div class="chaoshi_banner_wrapper clearfix grid_c1">
+                    <!-- 导航栏部分 -->
+                    <div class="chaoshi_nav">
+                        <div class="chaoshi_nav_header">京东超市频道分类</div>
+                        <div class="chaoshi_nav_body">
+                            <div class="itemm item1">
+                                <div class="itemm_header">
+                                        <div class="item_decoration"></div>
+                                    <h3 class="itemm_header_title">食品饮料
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">休闲零食</a>
+                                        <a href="">牛奶</a>
+                                        <a href="">饮料</a>
+                                    </p>
+                                </div>
+                                <div class="cnm cnm1">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">蛋糕饼干</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">坚果炒货</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="../html/liebiao.html" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="chaoshi_nav_recommend">
+                                            <a href="">
+                                                <img src="" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item2">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">粮油副食
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">食用油</a>
+                                        <a href="">米面</a>
+                                        <a href="">厨房调味</a>
+                                    </p>
+                                </div>
+                                <div class="cnm cnm2">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub">
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">食用油</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">花生油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">调和油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">玉米油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">葵花籽油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">大豆油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">菜籽油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">茶油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">亚麻籽油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">米面/面粉</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">东北大米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">南方籼米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">五常大米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口大米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">稻花油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">大米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">面粉</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">挂面</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">健康杂粮</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">小米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">红小豆</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">黄豆</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">薏仁米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">绿豆</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">黑米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糯米</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">黑芝麻</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">杂粮礼盒</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">厨房调味</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">酱油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">醋</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">盐</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">白糖</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">红糖</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">烘焙原料</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">味精/鸡精</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">复合调味料</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">方便速食</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便面</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便米饭</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">火腿肠</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">罐头</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">八宝粥</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">速食汤汁</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">麦片谷物</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便粉丝</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">南北干货</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">木耳</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">银耳</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">食用菌</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">枸杞</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">大枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">桂圆干</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">海干货</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">莲子</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                            <li class="chaoshi_nav_sub_item">
+                                                <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                <div class="chaoshi_nav_sub_main clearfix">
+                                                    <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                    <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                </div>
+                                            </li>
+                                        </ul>                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item3">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">个人护理
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">洗发护发</a>
+                                        <a href="">身体</a>
+                                        <a href="">口腔</a>
+                                        <a href="">...</a>
+                                    </p>
+                                </div>
+                                <div class="cnm cnm3">
+                                        <div class="itemm_body_wrapper clearfix">
+                                            <ul class="chaoshi_nav_sub">
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">洗发 </a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">护发素</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">护发精油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">发膜</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">套装</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">身体护理</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">沐浴</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">剃须</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">润肤</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">颈部</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">手足</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">护手霜</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">手膜</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">足膜</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">口腔护理</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">漱口水</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">牙膏</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">牙粉</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">牙刷</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">牙线</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">牙缝刷</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">口喷</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">假牙清洁</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">坚果炒货</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                            </ul>                          
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="itemm item4">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">护肤美妆
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">面部护肤</a>
+                                        <a href="">香水彩妆</a>
+                                        <a href="">男士</a>
+                                    </p>
+                                </div>
+                                <div class="cnm cnm4">
+                                        <div class="itemm_body_wrapper clearfix">
+                                            <ul class="chaoshi_nav_sub">
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">休闲食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">蛋糕饼干</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">坚果炒货</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                                <li class="chaoshi_nav_sub_item">
+                                                    <div class="chaoshi_nav_sub_title">进口食品</div>
+                                                    <div class="chaoshi_nav_sub_main clearfix">
+                                                        <a href="" class="chaoshi_nav_sub_main_link">休闲零食</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饼干蛋糕</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">橄榄油</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">坚果蜜枣</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">糖果/巧克力</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">进口牛奶</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">方便食品</a>
+                                                        <a href="" class="chaoshi_nav_sub_main_link">饮料冲调</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="chaoshi_nav_recommend">
+                                                <a href="">
+                                                    <img src="" alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img src="" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="itemm item5">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">家居清洁
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">纸品湿巾</a>
+                                        <a href="">衣物清洁</a>
+                                        <!-- <a href="">厨房用品</a> -->
+                                    </p>
+                                </div>
+                                <div class="itemm_body">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item6">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">母婴用品
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">奶粉</a>
+                                        <a href="">尿裤</a>
+                                        <a href="">玩具</a>
+                                    </p>
+                                </div>
+                                <div class="itemm_body">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item7">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">中外名酒
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">白酒</a>
+                                        <a href="">红酒/气泡</a>
+                                        <a href="">啤酒</a>
+                                    </p>
+                                </div>
+                                <div class="itemm_body">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item8">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">京东生鲜
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">橙子</a>
+                                        <a href="">奇异果</a>
+                                        <a href="">北极虾</a>
+                                    </p>
+                                </div>
+                                <div class="itemm_body">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemm item9">
+                                <div class="itemm_header">
+                                    <h3 class="itemm_header_title">居家生活
+                                        <i class="itemm_header_title_arrow">&gt;</i>
+                                    </h3>
+                                    <p class="itemm_header_sublinks">
+                                        <a href="">置物架</a>
+                                        <a href="">五金</a>
+                                        <a href="">狗粮</a>
+                                        <a href="">绿植</a>
+                                    </p>
+                                </div>
+                                <div class="itemm_body">
+                                    <div class="itemm_body_wrapper clearfix">
+                                        <ul class="chaoshi_nav_sub clearfix">
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                            <li class=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 轮播图部分 -->
+                    <div class="chaoshi_banner_mid fl">
+                        <div class="chaoshi_carousel">
+                            <div class="swiper-container swiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img1" src="img/lb1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/lb2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/lb3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                            <img class="img1" src="img/lb4.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/lb5.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/lb6.png" alt="">
+                                        </div>
+                                </div>
+                                <!-- 如果需要分页器 -->
+                                <div class="swiper-pagination"></div>
+                                
+                                <!-- 如果需要导航按钮 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                
+                                <!-- 如果需要滚动条 -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>
+                        </div>
+                        <ul class="chaoshi_bottom clearfix">
+                            <li class="chaoshi_bottom_item fl">
+                                <a href="" class="chaoshi_bottom_link">
+                                    <img src="img/lbx1.webp" alt="">
+                                </a>
+                            </li>
+                            <li class="chaoshi_bottom_item fl">
+                                <a href="" class="chaoshi_bottom_link">
+                                    <img src="img/lbx2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 轮播图右边部分 -->
+                    <div class="chaoshi_right fr">
+                        <div class="tupian"></div>
+                        <div class="chaoshi_handy">
+                            <h4 class="chaoshi_right_tt">
+                                 --
+                            </h4>
+                            <p class="chaoshi_right_tip">小物件 大用途</p>
+                            <div class="chaoshi_handy_carousel">
+                                <div class="chaoshi_handy_carousel">
+                                    <div class="chaoshi_handy_carousel_main">
+                                            <div class="swiper-container swiper2">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img class="img1" src="img/xlb1.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/xlb2.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/xlb3.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="img1" src="img/xlb4.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/xlb5.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- 如果需要分页器 -->
+                                                
+                                                
+                                                <!-- 如果需要导航按钮 -->
+                                                <!-- <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div> -->
+                                                
+                                                <!-- 如果需要滚动条 -->
+                                                <!-- <div class="swiper-scrollbar"></div> -->
+                                            </div>
+                                           
+                                    </div>
+                                    <div class="chaoshi_handy_carousel_nav clearfix">
+                                            <div class="swiper-pagination2"></div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <!-- 限时抢购 -->
+           <div class="chaoshi_seckill">
+               <div class="grid_c1">
+                   <!-- 倒计时部分 -->
+                   <div class="chaoshi_seckill_hd clearfix">
+                        <h3 class="chaoshi_seckill_tit">限时抢购</h3>
+                        <div class="J_chaoshi_seckill_time chaoshi_seckill_time">
+                            <span class="chaoshi_seckill_time_tip">距离本场结束还有</span>
+                            <div class="J_chaoshi_seckill_time_main chaoshi_seckill_time_main">
+                                <div class="time clearfix">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <!-- 商品部分 -->
+                   <div class="chaoshi_seckill_bd clearfix">
+                        <ul class="chaoshi_seckill_list clearfix">
+                           <li class="chaoshi_seckill_item csi">
+                               <div class="csi_pic">
+                                   <a href="" class="csi_pic_lk">
+                                       <img src="img/fala.png" alt="" class="csi_img">
+                                       <p class="csi_name">尊蓝男士BB霜素颜霜初学
+                                           者bb霜遮瑕痘印修颜粉底液保湿较防水汗自
+                                           然提亮小麦肤色男生用化妆品套装 自然色50g</p>
+                                   </a>
+                               </div>
+                               <p class="csi_price clearfix">    
+                                   <span class="csi_price_new"">¥57.90</span>    
+                                   <del class="csi_price_origin">¥59.90</del>  
+                                </p>
+                           </li>
+                           <li class="chaoshi_seckill_item csi">
+                                <div class="csi_pic">
+                                    <a href="" class="csi_pic_lk">
+                                        <img src="img/jiache.png" alt="" class="csi_img">
+                                        <p class="csi_name">轨道赛车</p>
+                                    </a>
+                                </div>
+                                <p class="csi_price clearfix">    
+                                    <span class="csi_price_new"">¥258.90</span>    
+                                    <del class="csi_price_origin">¥431.90</del>  
+                                 </p>
+                            </li>
+                            <li class="chaoshi_seckill_item csi">
+                                    <div class="csi_pic">
+                                        <a href="" class="csi_pic_lk">
+                                            <img src="img/jiache2.png" alt="" class="csi_img">
+                                            <p class="csi_name">奥迪双钻（AULDEY）
+                                                爆裂飞车3扫荡系列-猎天魄 684501 
+                                                男孩玩具儿童玩具 儿童节礼物</p>
+                                        </a>
+                                    </div>
+                                    <p class="csi_price clearfix">    
+                                        <span class="csi_price_new"">¥168.90</span>    
+                                        <del class="csi_price_origin">¥169.90</del>  
+                                     </p>
+                            </li>
+                            <li class="chaoshi_seckill_item csi">
+                                <div class="csi_pic">
+                                    <a href="" class="csi_pic_lk">
+                                        <img src="img/zhijin.png" alt="" class="csi_img">
+                                        <p class="csi_name">洁柔(C&S)卷纸 黑Face 
+                                            加厚4层180g卫生纸*23卷（柔软亲肤面子系列一格就够 
+                                            吸水耐用易降解）整箱销售</p>
+                                    </a>
+                                </div>
+                                <p class="csi_price clearfix">    
+                                    <span class="csi_price_new"">61.90</span>    
+                                    <del class="csi_price_origin">67.90</del>  
+                                    </p>
+                            </li>
+                            <li class="chaoshi_seckill_item csi">
+                                <div class="csi_pic">
+                                    <a href="" class="csi_pic_lk">
+                                        <img src="img/liulian.png" alt="" class="csi_img">
+                                        <p class="csi_name">创晟 泰国进口金枕头榴莲水果 1.5-2kg</p>
+                                    </a>
+                                </div>
+                                <p class="csi_price clearfix">    
+                                    <span class="csi_price_new"">¥98.90</span>    
+                                    <del class="csi_price_origin">¥108.90</del>  
+                                    </p>
+                            </li>
+                       </ul>
+                       <a href="" class="chaoshi_seckill_more">
+                           <img src="img/wz.png" alt="">
+                       </a>
+                   </div>
+               </div>
+           </div>
+           <!-- 超值量版 -->
+           <div class="chaoshi_discount grid_c1" id="chaoshi_discount_3">
+                <div class="chaoshi_mod_head">
+                    <h3 class="chaoshi_mod_head_title">
+                    超值量贩
+                    </h3>
+                </div>
+                <ul class="chaoshi_discount_big clearfix cdb">
+                    <li class="J_goods_item cdb_item">
+                        <div class="cdb_bd">
+                            <a href="###" class="cdb_pic">
+                                <img src="img/sqm.png" alt="" class="J_goods_img">
+                            </a>
+                            <img src="" alt="" class="cdb_logo">
+                            <a href="###" class="cdb_name">徐福记 沙皇礼盒 沙琪玛礼盒整箱糕点心 
+                                新年年货礼盒零食大礼包 1471g</a>
+                            <p class="cdb_promote1"></p>
+                            <p class="cdb_promote2">超值量贩定制款</p>
+                        </div>
+                        <div class="cdb_ft clearfix">
+                            <div class="cdb_ft_l ">
+                                
+                                <p class="cdb_price nosalenum">量贩价：
+                                    <span class="J_goods_price">¥69.90</span>
+                                </p>
+                            </div>
+                            <a href="###" class="J_goods_add cdb_ft_r cdb_add">
+                                <i class="cdb_add_icon"></i>
+                                <span class="cdb_add_txt">加入购物车</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="J_goods_item cdb_item">
+                        <div class="cdb_bd">
+                            <a href="###" class="cdb_pic">
+                                <img src="img/hly.png" alt="" class="J_goods_img">
+                            </a>
+                            <img src="" alt="" class="cdb_logo">
+                            <a href="###" class="cdb_name">【超值量贩定制款】好丽友（orion）饼干蛋糕 营养早餐 
+                                下午茶 Q蒂 红丝绒 蛋糕派 36枚混合派礼包</a>
+                            <p class="cdb_promote1"></p>
+                            <p class="cdb_promote2">超值量贩定制款</p>
+                        </div>
+                        <div class="cdb_ft clearfix">
+                            <div class="cdb_ft_l ">
+                                
+                                <p class="cdb_price nosalenum">量贩价：
+                                    <span class="J_goods_price">¥79.99</span>
+                                </p>
+                            </div>
+                            <a href="###" class="J_goods_add cdb_ft_r cdb_add">
+                                <i class="cdb_add_icon"></i>
+                                <span class="cdb_add_txt">加入购物车</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="J_goods_item cdb_item haha">
+                            <div class="cdb_bd">
+                                <a href="###" class="cdb_pic">
+                                    <img src="img/ksf.png" alt="" class="J_goods_img">
+                                </a>
+                                <img src="" alt="" class="cdb_logo">
+                                <a href="###" class="cdb_name">【超值量贩定制款】康师傅方便面 带我去远方同款 
+                                    红烧牛肉9桶 日式豚骨3桶 超值量贩桶装泡面整箱装</a>
+                                <p class="cdb_promote1"></p>
+                                <p class="cdb_promote2">超值量贩定制款</p>
+                            </div>
+                            <div class="cdb_ft clearfix">
+                                <div class="cdb_ft_l ">
+                                    
+                                    <p class="cdb_price nosalenum">量贩价：
+                                        <span class="J_goods_price">¥49.90</span>
+                                    </p>
+                                </div>
+                                <a href="###" class="J_goods_add cdb_ft_r cdb_add">
+                                    <i class="cdb_add_icon"></i>
+                                    <span class="cdb_add_txt">加入购物车</span>
+                                </a>
+                            </div>
+                    </li>
+                </ul>
+                <div class="chaoshi_discount_small clearfix">
+                    <ul class="chaoshi_seckill_list clearfix">
+                        <!-- <li class="chaoshi_seckill_item csi">
+                            <div class="csi_pic">
+                                <a href="###" class="csi_pic_lk">
+                                    <img src="img/fala.png" alt="" class="csi_img lui">
+                                    <p class="csi_name">尊蓝男士BB霜素颜霜初学
+                                        者bb霜遮瑕痘印修颜粉底液保湿较防水汗自
+                                        然提亮小麦肤色男生用化妆品套装 自然色50g</p>
+                                </a>
+                            </div>
+                            <p class="csi_price clearfix">    
+                                <span class="csi_price_new" "="">¥57.90</span>    
+                                <a href="###" class="J_goods_add cdi_add">
+                                    <i class="cdi_add_icon"></i>
+                                </a> 
+                            </p>
+                        </li>
+                        <li class="chaoshi_seckill_item csi">
+                            <div class="csi_pic">
+                                <a href="" class="csi_pic_lk">
+                                    <img src="img/jiache.png" alt="" class="csi_img lui">
+                                    <p class="csi_name">轨道赛车</p>
+                                </a>
+                            </div>
+                            <p class="csi_price clearfix">    
+                                <span class="csi_price_new" "="">¥258.90</span>    
+                                <a href="" class="J_goods_add cdi_add">
+                                    <i class="cdi_add_icon"></i>
+                                </a>  
+                            </p>
+                        </li>
+                        <li class="chaoshi_seckill_item csi">
+                                <div class="csi_pic">
+                                    <a href="" class="csi_pic_lk">
+                                        <img src="img/jiache2.png" alt="" class="csi_img">
+                                        <p class="csi_name">奥迪双钻（AULDEY）
+                                            爆裂飞车3扫荡系列-猎天魄 684501 
+                                            男孩玩具儿童玩具 儿童节礼物</p>
+                                    </a>
+                                </div>
+                                <p class="csi_price clearfix">    
+                                    <span class="csi_price_new" "="">¥168.90</span>    
+                                    <a href="" class="J_goods_add cdi_add">
+                                        <i class="cdi_add_icon"></i>
+                                    </a>  
+                                </p>
+                        </li>
+                        <li class="chaoshi_seckill_item csi">
+                            <div class="csi_pic">
+                                <a href="" class="csi_pic_lk">
+                                    <img src="img/zhijin.png" alt="" class="csi_img">
+                                    <p class="csi_name">洁柔(C&amp;S)卷纸 黑Face 
+                                        加厚4层180g卫生纸*23卷（柔软亲肤面子系列一格就够 
+                                        吸水耐用易降解）整箱销售</p>
+                                </a>
+                            </div>
+                            <p class="csi_price clearfix">    
+                                <span class="csi_price_new" "="">61.90</span>    
+                                <a href="" class="J_goods_add cdi_add">
+                                    <i class="cdi_add_icon"></i>
+                                </a>
+                                </p>
+                        </li>
+                        <li class="chaoshi_seckill_item csi">
+                            <div class="csi_pic">
+                                <a href="" class="csi_pic_lk">
+                                    <img src="img/liulian.png" alt="" class="csi_img">
+                                    <p class="csi_name">创晟 泰国进口金枕头榴莲水果 1.5-2kg</p>
+                                </a>
+                            </div>
+                            <p class="csi_price clearfix">    
+                                <span class="csi_price_new" "="">¥98.90</span>    
+                                <a href="" class="J_goods_add cdi_add">
+                                    <i class="cdi_add_icon"></i>
+                                </a>  
+                                </p>
+                        </li> -->
+                    </ul>
+                    <a href="" class="chaoshi_seckill_more">
+                        <img src="img/wz.png" alt="">
+                    </a>
+                </div>
+           </div>
+           <!-- 品牌特卖 -->
+           <div class="chaoshi_brand grid_c1"  id="chaoshi_brand_5">
+                <div class="chaoshi_mod_head">
+                    <h3 class="chaoshi_mod_head_title">
+                            品牌特卖
+                    </h3>
+                </div>
+                <!-- 中 -->
+                <div class="chaoshi_brand_row clearfix">
+                    <a href="" class="chaoshi_brand_today">
+                        <img src="img/sp5.png" alt="">
+                    </a>
+                    <div class="chaoshi_brand_list chaoshi_brand_big clearfix">
+                        <a href="" class="">
+                            <img src="img/sp3.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="">
+                            <img src="img/sp4.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="">
+                            <img src="img/sp1.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="">
+                            <img src="img/sp6.png" alt="" class="layui-anim">
+                        </a>
+                    </div>
+                </div>
+                <!-- 下 -->
+                <div class="chaoshi_brand_row clearfix">
+                    <div class="chaoshi_brand_list chaoshi_brand_small clearfix">
+                        <a href="" class="chaoshi_brand_item">
+                            <img src="img/sp3.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="" class="chaoshi_brand_item">
+                            <img src="img/sp4.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="" class="chaoshi_brand_item">
+                            <img src="img/sp6.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="" class="chaoshi_brand_item">
+                            <img src="img/sp1.png" alt="" class="layui-anim">
+                        </a>
+                        <a href="" class="chaoshi_brand_item">
+                            <img src="img/sp7.png" alt="" class="layui-anim">
+                        </a>
+                    </div>
+                    <a href="" class="chaoshi_brand_more">
+                        <img src="img/sp10.png" alt="" class="layui-anim">
+                    </a>
+                </div>
+           </div>
+           
+           <!-- 热卖商品 -->
+           <div class="chaoshi_buy grid_c1 chaoshi_mod">
+                <div class="chaoshi_mod_head">
+                    <h3 class="chaoshi_mod_head_title">
+                        热卖商品
+                    </h3>
+                </div>
+                <div class="chaoshi_mod_body">
+                    <div class="chaoshi_buy_goods goods">
+                        <!-- 如果需要导航按钮
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                        <div class="chaoshi_buy_goods_list goods_list clearfix">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="asdf" src="img/dadiao.png" alt="" style="">
+                                       
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="asdf" src="img/dadiao.png" alt="">
+                                      
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="asdf" src="img/dadiao.png" alt="">
+                                        
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="asdf" src="img/dadiao.png" alt="">
+                                      
+                                    </div>
+                                </div>
+                                <!-- 如果需要分页器 -->                                        
+                                <!-- 如果需要滚动条 -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+           </div>
+           <!-- 休闲零食 -->
+           <div class="chaoshi_category grid_c1">
+                <div class="chaoshi_mod_head">
+                <h3 class="chaoshi_mod_head_title">
+                        休闲零食
+                </h3>
+
+                </div>
+                <!-- 下 -->
+                <div class="chaoshi_category_bd grid_c1">
+                    <!-- 左 -->
+                    <div class="chaoshi_category_focus">
+                        <a href="###" class="chaoshi_category_focus_pic">
+                            <img src="img/xxls.png" alt="" class="">
+                        </a>
+                        <div class="chaoshi_category_focus_key">
+                            <div class="chaoshi_category_focus_key_inner">
+                                <a href="###" class="">坚果</a>
+                                <a href="###" class="">休闲零食</a>
+                                <a href="###" class="">饼干蛋糕</a>
+                                <a href="###" class="">肉干肉脯</a>
+                                <a href="###" class="">巧克力</a>
+                                <a href="###" class="">蜜饯果干</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="goods chaoshi_category_goods clearfix">
+                        <ul class="chaoshi_category_ul goods_list goodss">
+                            <li class="J_goods_item goods_item" data-id="01">
+                                <a href="###" class="goods_pic">
+                                    <img src="img/n1.png" alt="" class="J_goods_img goods_img">
+                                </a>
+                                <p class="goods_title">古蜀食者【2件8折】川味烟熏腊肉500g 肥瘦可选 
+                                    四川成都特产农家自制烟熏咸肉五花后腿年货节送礼 川味后腿腊肉500g</p>
+                                <div class="goods_prices clearfix">
+                                    <p class="J_goods_price goods_price">¥58.90</p>
+                                    <p class="goods_prices_plus" >
+                                        <em class="goods_prices_plus_txt"></em>
+                                        <i class="goods_prices_plus_icon"></i>
+                                    </p>
+                                </div>
+                                <a href="###" class="J_goods_add goods_add">
+                                    <i class="goods_add_icon"></i>
+                                    <span class="goods_add_txt">加入购物车</span>
+                                </a>
+                            </li>
+                            <li class="J_goods_item goods_item" data-id="06">
+                                <a href="###" class="goods_pic">
+                                    <img src="img/n2.png" alt="" class="J_goods_img goods_img">
+                                </a>
+                                <p class="goods_title">立顿 Lipton 奶茶LINE FRIENDS新年分享礼盒4种口味混合装40条730g</p>
+                                <div class="goods_prices clearfix">
+                                    <p class="J_goods_price goods_price">¥88.90</p>
+                                    <p class="goods_prices_plus" >
+                                        <em class="goods_prices_plus_txt"></em>
+                                        <i class="goods_prices_plus_icon"></i>
+                                    </p>
+                                </div>
+                                <a href="###" class="J_goods_add goods_add">
+                                    <i class="goods_add_icon"></i>
+                                    <span class="goods_add_txt">加入购物车</span>
+                                </a>
+                            </li>
+                            <li class="J_goods_item goods_item" data-id="03">
+                                <a href="###" class="goods_pic">
+                                    <img src="img/n3.png" alt="" class="J_goods_img goods_img">
+                                </a>
+                                <p class="goods_title">YOTIME 什锦曲奇饼干年货礼盒 办公室休闲零食早餐
+                                    点心组合装年货节送礼品企业团购礼物情人节送礼 精致礼盒装/全国包邮 58</p>
+                                <div class="goods_prices clearfix">
+                                    <p class="J_goods_price goods_price">¥8.90</p>
+                                    <p class="goods_prices_plus" >
+                                        <em class="goods_prices_plus_txt"></em>
+                                        <i class="goods_prices_plus_icon"></i>
+                                    </p>
+                                </div>
+                                <a href="###" class="J_goods_add goods_add">
+                                    <i class="goods_add_icon"></i>
+                                    <span class="goods_add_txt">加入购物车</span>
+                                </a>
+                            </li>
+                            <li class="J_goods_item goods_item">
+                                <a href="###" class="goods_pic">
+                                    <img src="img/n5.png" alt="" class="J_goods_img goods_img">
+                                </a>
+                                <p class="goods_title">奥利奥Oreo早餐休闲零食蛋糕糕点缤纷双果味夹心饼干蓝莓味+树莓味388g</p>
+                                <div class="goods_prices clearfix">
+                                    <p class="J_goods_price goods_price">¥19.90</p>
+                                    <p class="goods_prices_plus" >
+                                        <em class="goods_prices_plus_txt"></em>
+                                        <i class="goods_prices_plus_icon"></i>
+                                    </p>
+                                </div>
+                                <a href="###" class="J_goods_add goods_add">
+                                    <i class="goods_add_icon"></i>
+                                    <span class="goods_add_txt">加入购物车</span>
+                                </a>
+                            </li>
+                            <li class="J_goods_item goods_item">
+                                    <a href="###" class="goods_pic">
+                                        <img src="img/n6.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">澳牧儿童成长牛奶礼盒 春节送礼年货礼盒 高端全脂纯进口牛奶 澳大利亚原装进口 200ml*12</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥118.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="###" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                            <li class="J_goods_item goods_item">
+                                    <a href="###" class="goods_pic">
+                                        <img src="img/n7.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">熊孩子 综合蔬菜脆106g/袋 蜜饯果干 零食 香菇脆秋葵干即吃混合果蔬脆片</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥13.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="###" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="###" class="goods_pic">
+                                            <img src="img/n8.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">炫迈（Stride） 休闲零食 无糖口香糖 炫动薄荷味双盒超值装糖果（28片*2）100.8g（新老包装随机发货）</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥17.90</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="###" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                            <li class="J_goods_item goods_item">
+                                    <a href="###" class="goods_pic">
+                                        <img src="img/n9.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">御食园 北京特产 礼包1500g 年货礼盒驴打滚 蜜麻花果脯休闲食品小吃</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥77.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="###" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                            <li class="J_goods_item goods_item">
+                                    <a href="###" class="goods_pic">
+                                        <img src="img/n10.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">三剑客 美宜畅乳酸菌牛奶饮品 原味 338ml*10 整箱装</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥25.00</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="###" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                            <li class="J_goods_item goods_item">
+                                    <a href="###" class="goods_pic">
+                                        <img src="img/n11.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">【林更新推荐爆款】自嗨锅 麻辣肥牛自热火锅  自煮自助小火锅懒人速食 经典牛油底料方便火锅</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥31.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="###" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>  
+           <!-- 奶    -->
+           <div class="chaoshi_category grid_c1">
+                <div class="chaoshi_mod_head">
+                <h3 class="chaoshi_mod_head_title">
+                        奶制品
+                </h3>
+
+                </div>
+                <!-- 下 -->
+                <div class="chaoshi_category_bd grid_c1">
+                    <!-- 左 -->
+                    <div class="chaoshi_category_focus">
+                        <a href="###" class="chaoshi_category_focus_pic">
+                            <img src="img/cz.png" alt="" class="">
+                        </a>
+                        <div class="chaoshi_category_focus_key">
+                            <div class="chaoshi_category_focus_key_inner">
+                                <a href="" class="">坚果</a>
+                                <a href="" class="">休闲零食</a>
+                                <a href="" class="">饼干蛋糕</a>
+                                <a href="" class="">肉干肉脯</a>
+                                <a href="" class="">巧克力</a>
+                                <a href="" class="">蜜饯果干</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="goods chaoshi_category_goods clearfix">
+                            <ul class="chaoshi_category_ul goods_list">
+                                <li class="J_goods_item goods_item">
+                                    <a href="" class="goods_pic">
+                                        <img src="img/n1.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">古蜀食者【2件8折】川味烟熏腊肉500g 肥瘦可选 
+                                        四川成都特产农家自制烟熏咸肉五花后腿年货节送礼 川味后腿腊肉500g</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥58.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                                <li class="J_goods_item goods_item">
+                                    <a href="" class="goods_pic">
+                                        <img src="img/n2.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">立顿 Lipton 奶茶LINE FRIENDS新年分享礼盒4种口味混合装40条730g</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥88.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                                <li class="J_goods_item goods_item">
+                                    <a href="" class="goods_pic">
+                                        <img src="img/n3.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">YOTIME 什锦曲奇饼干年货礼盒 办公室休闲零食早餐
+                                        点心组合装年货节送礼品企业团购礼物情人节送礼 精致礼盒装/全国包邮 58</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥8.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                                <li class="J_goods_item goods_item">
+                                    <a href="" class="goods_pic">
+                                        <img src="img/n5.png" alt="" class="J_goods_img goods_img">
+                                    </a>
+                                    <p class="goods_title">奥利奥Oreo早餐休闲零食蛋糕糕点缤纷双果味夹心饼干蓝莓味+树莓味388g</p>
+                                    <div class="goods_prices clearfix">
+                                        <p class="J_goods_price goods_price">¥19.90</p>
+                                        <p class="goods_prices_plus" >
+                                            <em class="goods_prices_plus_txt"></em>
+                                            <i class="goods_prices_plus_icon"></i>
+                                        </p>
+                                    </div>
+                                    <a href="" class="J_goods_add goods_add">
+                                        <i class="goods_add_icon"></i>
+                                        <span class="goods_add_txt">加入购物车</span>
+                                    </a>
+                                </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="" class="goods_pic">
+                                            <img src="img/n6.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">澳牧儿童成长牛奶礼盒 春节送礼年货礼盒 高端全脂纯进口牛奶 澳大利亚原装进口 200ml*12</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥118.90</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="" class="goods_pic">
+                                            <img src="img/n7.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">熊孩子 综合蔬菜脆106g/袋 蜜饯果干 零食 香菇脆秋葵干即吃混合果蔬脆片</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥13.90</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                                    <li class="J_goods_item goods_item">
+                                            <a href="" class="goods_pic">
+                                                <img src="img/n8.png" alt="" class="J_goods_img goods_img">
+                                            </a>
+                                            <p class="goods_title">炫迈（Stride） 休闲零食 无糖口香糖 炫动薄荷味双盒超值装糖果（28片*2）100.8g（新老包装随机发货）</p>
+                                            <div class="goods_prices clearfix">
+                                                <p class="J_goods_price goods_price">¥17.90</p>
+                                                <p class="goods_prices_plus" >
+                                                    <em class="goods_prices_plus_txt"></em>
+                                                    <i class="goods_prices_plus_icon"></i>
+                                                </p>
+                                            </div>
+                                            <a href="" class="J_goods_add goods_add">
+                                                <i class="goods_add_icon"></i>
+                                                <span class="goods_add_txt">加入购物车</span>
+                                            </a>
+                                        </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="" class="goods_pic">
+                                            <img src="img/n9.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">御食园 北京特产 礼包1500g 年货礼盒驴打滚 蜜麻花果脯休闲食品小吃</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥77.90</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="" class="goods_pic">
+                                            <img src="img/n10.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">三剑客 美宜畅乳酸菌牛奶饮品 原味 338ml*10 整箱装</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥25.00</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                                <li class="J_goods_item goods_item">
+                                        <a href="" class="goods_pic">
+                                            <img src="img/n11.png" alt="" class="J_goods_img goods_img">
+                                        </a>
+                                        <p class="goods_title">【林更新推荐爆款】自嗨锅 麻辣肥牛自热火锅  自煮自助小火锅懒人速食 经典牛油底料方便火锅</p>
+                                        <div class="goods_prices clearfix">
+                                            <p class="J_goods_price goods_price">¥31.90</p>
+                                            <p class="goods_prices_plus" >
+                                                <em class="goods_prices_plus_txt"></em>
+                                                <i class="goods_prices_plus_icon"></i>
+                                            </p>
+                                        </div>
+                                        <a href="" class="J_goods_add goods_add">
+                                            <i class="goods_add_icon"></i>
+                                            <span class="goods_add_txt">加入购物车</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+           </div>  
+           
+        </div>
+        <!-- ------------------------------------------- -->
+
+        <!-- 尾部 -->
+        <div id="cmsfooter">
+            <div class="service-2017">
+                <ul class="www">
+                    <li>
+                        <img src="img/duo.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="img/kuai.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="img/hao.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                    <li>
+                        <img src="img/seng.png" alt="">
+                        <i>品类齐全，轻松购物
+                    </i>
+                    </li>
+                </ul>
+                <div class="jd-help">
+                    <div class="ww">
+                        <div class="jd-help-ww-wrap">
+                            <dl class="byy1">
+                                <dt>购物指南</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy2">
+                                <dt>配送方式</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy3">
+                                <dt>支付方式</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy4">
+                                <dt>售后服务</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                            <dl class="byy5">
+                                <dt>特色服务</dt>
+                                <dd>
+                                    <a href="">购物流程</a>
+                                </dd>
+                                <dd>
+                                    <a href="">会员介绍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">生活旅行/团购</a>
+                                </dd>
+                                <dd>
+                                    <a href="">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="">大家电</a>
+                                </dd>
+                                <dd>
+                                    <a href="">联系客服</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-2017">
+                <div class="copyright_links">
+                    <p>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                        <a href="">关于我们</a>
+                        <span class="copyright_split">|</span>
+                    </p>
+                </div>
+                <div class="copyright_info">
+                    <p>
+                        <a href="">京公网安备 11000002000088号</a>
+                        <span class="copyright_split">|</span>
+                        <span>京ICP证070359号</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <span class="copyright_split">|</span>
+                        <span>新出发京零&nbsp;字第大120007号</span>
+                    </p>
+                    <p>
+                        <a href="">互联网出版许可编号新出网证(京)字150号</a>
+                        <span class="copyright_split">|</span>
+                        <span>出版物经营许可证</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
+                        <span class="copyright_split">|</span>
+                        <span>违法和不良信息举报电话：4006561155</span>
+                    </p>
+                    <p>
+                            <span class="copyright_text">Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;<em id="copyright_year">2019</em>&nbsp;&nbsp;京东JD.com&nbsp;版权所有</span>
+                        <span class="copyright_split">|</span>
+                        <span>消费者维权热线:4006067733  经营证照</span>
+                        <span class="copyright_split">|</span>
+                        <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <span class="copyright_split">|</span>
+                        <span>营业执照</span>
+                    </p>
+                    <p class="mod_copyright_inter">
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_global"></i>
+                            Global Site
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_rissia"></i>
+                            Сайт России
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_indonesia"></i>
+                            Situs Indonesia
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_spain"></i>
+                            Sitio de España
+                        </a>
+                        <span class="copyright_split">|</span>
+                        <a class="mod_copyright_inter_lk" href="">
+                            <i class="mod_copyright_inter_ico mod_copyright_inter_ico_thailand"></i>
+                            เว็บไซต์ประเทศไทย
+                        </a>
+                    </p>
+                </div>
+                <div class="copyright_auth">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- 信息栏 -->
+        <div class="chaoshi_lift">
+            <ul>
+                <li>
+                    <a href="" class="yi">家量超值</a>
+                    <a href="" class="er">品牌特卖</a>
+                    <a href="" class="er">热卖商品</a>
+                    <a href="" class="er">休闲零食</a>
+                    <a href="" id="san">回到顶部</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 选项卡 -->
+        <div class="sb">
+            <div class="layui-tab .jdm-toolbar-tabs">
+                <ul class="layui-tab-title jba"style="    position: absolute;
+                left: -50px;top:315px;">
+                  <li class="layui-this " data-id="0" style="display:flex;margin-bottom: 1px;
+                  width: 35px;height: 35px;">
+                    <i style="background: url(http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+                        background-color: #c81623;
+                        background-position: -50px 0;
+                        width: 34px;
+                        height: 35px;
+                        margin-left: 1px;
+                        position: relative;
+                        z-index: 2;
+                        background-color: #7a6e6e;
+                        display: inline-block;">
+                        <a href="html/denglu.html"></a>
+                    </i>
+                </li>
+                  <li class="layui-this "data-id="1" style="display:flex;">
+                    <i style="background: url(http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+                    background-color: #c81623;
+                    background-position: -50px 0;
+                    width: 34px;
+                    margin-bottom:1px;
+                    height: 35px;
+                    margin-left: 1px;
+                    position: relative;
+                    z-index: 2;
+                    background-color: #7a6e6e;
+                    display: inline-block;">
+                </i>
+                </li>
+                  <li class="layui-this " data-id="2" style="display:flex;">
+                    <i style="background: url(http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+                    background-color: #c81623;
+                    background-position: -50px 0;
+                    width: 34px;
+                    margin-bottom:1px;
+                    height: 35px;
+                    margin-left: 1px;
+                    position: relative;
+                    z-index: 2;
+                    background-color: #7a6e6e;
+                    display: inline-block;">
+                    </i>
+                </li>
+                  <li class="layui-this " data-id="3" style="display:flex;">
+                        <i style="background: url(http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+                        background-color: #c81623;
+                        background-position: -50px 0;
+                        width: 34px;
+                        margin-bottom:1px;
+                        height: 35px;
+                        margin-left: 1px;
+                        position: relative;
+                        z-index: 2;
+                        background-color: #7a6e6e;
+                        display: inline-block;">
+                     </i>
+                </li>
+                  <li class="layui-this " data-id="4" style="display:flex;">
+                    <i style="background: url(http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png) no-repeat;
+                    background-color: #c81623;
+                    background-position: -50px 0;
+                    width: 34px;
+                    height: 35px;
+                    margin-bottom:1px;
+                    margin-left: 1px;
+                    position: relative;
+                    z-index: 2;
+                    background-color: #7a6e6e;
+                    display: inline-block;">
+                    </i>
+                </li>
+                </ul>
+                <div class="layui-tab-content">
+                  <div class="layui-tab-item layui-show">登录</div>
+                  <div class="layui-tab-item">购物车</div>
+                  <div class="layui-tab-item">我的关注</div>
+                  <div class="layui-tab-item">我的足迹</div>
+                  <div class="layui-tab-item">咨询</div>
+                </div>
+              </div>
+        </div>
+   </div>
+</body>
+</html>

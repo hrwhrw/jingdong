@@ -1,0 +1,389 @@
+#header {
+  width: 100%;
+  height: 100px;
+}
+#header .main {
+  width: 990px;
+  height: 78.5px;
+  margin: 0 auto;
+  position: relative;
+}
+#header .logo {
+  width: 160px;
+  height: 50px;
+  float: left;
+  margin-top: 24px;
+  background: url(../img/icon.png) no-repeat;
+}
+#header .logo-title {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+  color: #333;
+  margin-top: 34px;
+}
+#header .DW {
+  position: absolute;
+  top: 55px;
+  right: 0;
+}
+#header .DW a {
+  font-size: 12px;
+}
+#header .DW img {
+  width: 25px;
+  height: 25px;
+}
+#header .DW a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#header .have-account {
+  font-size: 16px;
+  float: right;
+  margin-top: 55px;
+  color: #999;
+}
+#header .have-account a {
+  color: #e22;
+}
+#header .have-account a:hover {
+  color: #c81623;
+  text-decoration: underline;
+}
+
+/* -------------------------------------- */
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+#container .login-wrap {
+  margin-top: 0;
+  position: relative;
+  height: 475px;
+  z-index: 5;
+}
+#container .login-wrap .w {
+  width: 990px;
+  margin: 0 auto;
+}
+#container .login-wrap .w .login-form {
+  position: relative;
+  z-index: 4;
+  background: #fff;
+  overflow: visible;
+  width: 346px;
+  height: 398.78px;
+  float: right;
+  top: 10px;
+}
+#container .login-wrap .w .login-form .coagent {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  border-top: 1px solid #f4f4f4;
+  height: auto;
+  background-color: #fcfcfc;
+}
+#container .login-wrap .w .login-form .coagent ul {
+  height: 50px;
+  display: block;
+}
+#container .login-wrap .w .login-form .coagent ul .extra-r {
+  float: right;
+}
+#container .login-wrap .w .login-form .coagent ul .extra-r span {
+  font-size: 14px;
+}
+#container .login-wrap .w .login-form .coagent ul .extra-r b {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../../img/you.png) no-repeat;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#container .login-wrap .w .login-form .coagent ul li {
+  float: left;
+}
+#container .login-wrap .w .login-form .coagent ul li span {
+  color: #ccc;
+  padding: 0 8px;
+}
+#container .login-wrap .w .login-form .coagent ul li a {
+  display: inline-block;
+  position: relative;
+  padding-left: 24px;
+}
+#container .login-wrap .w .login-form .coagent ul li a b {
+  width: 19px;
+  height: 18px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  float: left;
+  left: 0;
+  top: 16px;
+}
+#container .login-wrap .w .login-form .coagent ul li a b img {
+  margin-top: -36px;
+  margin-left: -2px;
+  width: 19px;
+  height: 18px;
+}
+#container .login-wrap .w .login-form .coagent ul li a span {
+  color: #666;
+}
+#container .login-wrap .w .login-form .login-box {
+  width: 306px;
+  padding: 20px;
+  display: block;
+  visibility: visible;
+}
+#container .login-wrap .w .login-form .login-box .mt {
+  display: inline-block;
+  display: block;
+  overflow: visible;
+  height: 35px;
+  width: 306px;
+}
+#container .login-wrap .w .login-form .login-box .mc {
+  width: 306px;
+  height: 192px;
+  overflow: visible;
+  zoom: 1;
+}
+#container .login-wrap .w .login-form .login-box .mc .item-fore5 {
+  width: 36px;
+  margin-bottom: 10px;
+}
+#container .login-wrap .w .login-form .login-box .mc .item-fore5 .login-btn {
+  margin: 0 auto;
+  height: 32px;
+  width: 100%;
+  position: relative;
+}
+#container .login-wrap .w .login-form .login-box .mc .item-fore5 .login-btn a {
+  border: 1px solid #e85356;
+  display: block;
+  width: 302px;
+  background: #e4393c;
+  height: 36px;
+  line-height: 31px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Microsoft YaHei';
+  text-align: center;
+}
+#container .login-wrap .w .login-form .login-box .mc .wj {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  float: right;
+}
+#container .login-wrap .w .login-form .login-box .mc .item-fore4 a:hover {
+  color: #E4393C;
+  text-decoration: underline;
+}
+#container .login-wrap .w .login-form .login-box .mc .item {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #bdbdbd;
+  height: 38px;
+  width: 304px;
+}
+#container .login-wrap .w .login-form .login-box .mc .item .login-label {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 38.5px;
+  height: 38px;
+  border-right: 1px solid #bdbdbd;
+}
+#container .login-wrap .w .login-form .login-box .mc .item .login-label img {
+  width: 37px;
+  height: 36px;
+}
+#container .login-wrap .w .login-form .login-box .mc .item .uname, #container .login-wrap .w .login-form .login-box .mc .item .upwd {
+  line-height: 38px;
+  height: 36px;
+  border: 0;
+  padding: 10px 0 10px 50px;
+  width: 254px;
+  float: none;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: '\5b8b\4f53';
+  *margin: -1px 0 0;
+}
+#container .login-wrap .w .login-form .login-box .msg-wrap {
+  width: 306px;
+  min-height: 23px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: auto !important;
+}
+#container .login-wrap .w .login-form .login-box .msg-wrap .msg-error {
+  display: none;
+  position: relative;
+  background: #ffebeb;
+  color: #e4393c;
+  border: 1px solid #faccc6;
+  padding: 3px 10px 3px 40px;
+  line-height: 15px;
+  height: auto;
+}
+#container .login-wrap .w .login-form .login-box .msg-wrap .msg-error img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: block;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+#container .login-wrap .w .login-form .login-tab-l {
+  width: 173px;
+  height: 54px;
+  font-size: 18px;
+  font-family: "microsoft yahei";
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  position: absolute;
+  background: #fff;
+  display: block;
+}
+#container .login-wrap .w .login-form .login-tab-l a {
+  width: 99%;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  color: #e4393c;
+  top: 18px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+#container .login-wrap .w .login-form .login-tab-l a:hover {
+  font-weight: 700;
+  color: #e4393c;
+}
+#container .login-wrap .w .login-form .login-tab-r {
+  width: 173px;
+  right: 0;
+  height: 54px;
+  font-size: 18px;
+  font-family: "microsoft yahei";
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  position: absolute;
+  background: #fff;
+  display: block;
+}
+#container .login-wrap .w .login-form .login-tab-r a {
+  font-weight: 700;
+  color: #e4393c;
+  width: 99%;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 18px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+#container .login-wrap .login-banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 475px;
+  background-color: #ffbcd3;
+}
+#container .login-wrap .login-banner .w {
+  width: 990px;
+  margin: 0 auto;
+}
+#container .login-wrap .login-banner .w .i-inner {
+  position: relative;
+  z-index: 3;
+  height: 475px;
+}
+#container .tips-wrapper {
+  background: #fff8f0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#container .tips-wrapper .cont-wrapper {
+  display: inline-block;
+  display: inline;
+  width: 90%;
+}
+#container .tips-wrapper .cont-wrapper .icon-tips {
+  background: url(../img/i.png) no-repeat center;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#container .tips-wrapper .cont-wrapper p {
+  vertical-align: middle;
+  color: #999;
+  font-size: 12px;
+  display: inline-block;
+  *display: inline;
+}
+#container .progress-bar {
+  position: relative;
+  margin: 80px auto 0;
+  width: 400px;
+  height: 54.8px;
+}
+#container .progress-bar .pro-step {
+  float: left;
+  text-align: center;
+}
+#container .progress-bar .pro-step .step-index {
+  background-position: 0 -200px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-position: -45px -200px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+}
+#container .progress-bar .pro-step .step-desc {
+  color: #3b4;
+}
+#container .root61 .w {
+  width: 1210px;
+}
+#container .footer {
+  font-size: 12px;
+  text-align: center;
+  border-top: solid 1px #e6e6e6;
+  color: #999;
+  padding-bottom: 30px;
+}
+#container .footer .links {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#container .footer .links a {
+  color: #999;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=denglu.css.map */
